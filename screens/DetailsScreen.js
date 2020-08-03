@@ -15,8 +15,6 @@ export default class DetailsScreen extends React.Component{
     }
   
   
-
-    
     render(){
         const data = this.props.navigation.getParam("Data", {})
         console.log(data)
@@ -24,7 +22,10 @@ export default class DetailsScreen extends React.Component{
             <View style={styles.container}>
                 <View style={styles.top}>
                     <Image style={styles.poster} source={{uri : data.Poster}}/>
-                    <Text style={styles.desc} numberOfLines={4}>{data.Plot}</Text>
+                    <View style={{flexDirection : 'column', flex : 2}}>
+                        <Text style={styles.desc} numberOfLines={5}>{data.Plot}</Text>
+                        <Text style={styles.seeMore}>See Full Description</Text>
+                    </View>
                 </View>
                 <View style={styles.middle}></View>
                 <View style={styles.bottom}></View>
@@ -51,11 +52,18 @@ const styles = StyleSheet.create({
         backgroundColor : 'red'
     },
     poster :{
-        flexGrow : 1,
+        flex : 1,
+        
         width : 150
     },
     desc :{
-
+        padding : 4,
+        fontSize : 16
+    },
+    seeMore :{
+        fontSize : 10,
+        color : 'gray',
+        textAlign : "center"
     },
     middle: {
         flex : 1,
