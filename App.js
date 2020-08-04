@@ -17,6 +17,7 @@ const DetailsStack = createStackNavigator({
   Description : DescriptionScreen
 },
 {
+  headerTitle : 'Hello',
   mode : 'modal'
 });
 

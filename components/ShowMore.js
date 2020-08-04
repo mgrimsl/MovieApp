@@ -16,7 +16,7 @@ export default class ShowMore extends React.Component {
     }
 
     render(){
-    const NUM_OF_LINES = 10;
+    const NUM_OF_LINES = 12;
     
     return (
     
@@ -43,8 +43,10 @@ export default class ShowMore extends React.Component {
 
 const styles = StyleSheet.create({
     desc :{
-        padding : 4,
-        fontSize : 16
+        paddingLeft : 15,
+        padding : 5,
+        fontSize : 16,
+        color : 'white'
     },
     seeMore :{
         fontSize : 10,
