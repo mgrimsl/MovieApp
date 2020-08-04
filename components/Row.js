@@ -14,7 +14,9 @@ export default Row = (props) => (
 const styles = StyleSheet.create({
     container : {   
         flexDirection : 'row',
-        padding : 4
+        padding : 4,
+        borderTopWidth : .2,
+        borderColor : '#3b3b3b'
     },
     image : {
         height : 80,

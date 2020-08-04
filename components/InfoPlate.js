@@ -14,8 +14,8 @@ export default InfoPlate = (props) => (
 const styles = StyleSheet.create({
     container : {
         flexDirection : 'row',
-        borderBottomWidth : 1,
-        borderColor : "gray"
+        borderBottomWidth : .2,
+        borderColor : "#3b3b3b"
     },
     title : {
         color : 'white',

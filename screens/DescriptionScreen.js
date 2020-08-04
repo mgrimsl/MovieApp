@@ -1,4 +1,5 @@
 import { View, Text, Button, StyleSheet} from 'react-native';
+import Constants from 'expo-constants'
 import React from 'react';
 
 export default class DescriptionScreen extends React.Component{ 
@@ -15,32 +16,22 @@ export default class DescriptionScreen extends React.Component{
 
     render(){
         return( 
-        <View style={{flex:1}}>
-            <Text>{this.props.navigation.getParam("Desc" , " None ")}</Text>
+        <View style={styles.constainer}>
+            <Text style={styles.text}>{this.props.navigation.getParam("Desc" , " None ")}</Text>
         </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    headerStyle : {
+    constainer : {
+        flex : 1,
         backgroundColor : 'black'
     },
-    headerTitleStyle : {
-        fontWeight : 'bold'
-    },
-    Top : {
-        flex:1,
-        backgroundColor: 'red',
-        alignItems: 'center',
-        justifyContent: 'center' 
-    },
-    Middle : {
-        flex : 1,
-        backgroundColor : 'yellow'
-    },
-    Bottom : {
-        flex:1,
-        backgroundColor: 'blue',
+    text :{
+        paddingTop : Constants.statusBarHeight,
+        color : 'white',
+        padding : 7,
+        fontSize : 16
     }
 })

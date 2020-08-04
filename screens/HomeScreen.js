@@ -2,6 +2,8 @@ import { View, Text, Button, StyleSheet} from 'react-native';
 import React from 'react';
 
 export default class HomeScreen extends React.Component{ 
+    
+    
     static navigationOptions = ({ navigation }) => {
         return{
             title : 'Home',
@@ -10,6 +12,7 @@ export default class HomeScreen extends React.Component{
             headerTitleStyle : styles.headerTitleStyle,
         }
     }
+    
 
     Title = "My Movie67"
 

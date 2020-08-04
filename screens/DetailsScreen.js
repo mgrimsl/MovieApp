@@ -51,7 +51,7 @@ export default class DetailsScreen extends React.Component{
 
 const styles = StyleSheet.create({
     headerStyle : {
-        backgroundColor : 'gray'
+        backgroundColor : 'black'
     },
     headerTitleStyle : {
         fontWeight : 'bold'
@@ -74,8 +74,8 @@ const styles = StyleSheet.create({
         flex : .5,
         flexDirection: 'row',
         backgroundColor : 'black',
-        borderBottomColor : 'gray',
-        borderBottomWidth : 1
+        borderBottomColor : '#3b3b3b',
+        borderBottomWidth : .2
       
     },
     bottom : {
