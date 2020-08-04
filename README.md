@@ -1,5 +1,5 @@
 # MovieApp
-A React Native App that implments a userinterface for the Open Movie DataBase
+A React Native App that implments a user interface for the Open Movie DataBase
 
 ![alt-text](https://github.com/mgrimsl/MovieApp/blob/master/assets/DemoGif.gif)
 
