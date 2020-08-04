@@ -6,13 +6,23 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './screens/HomeScreen'
 import DetailsScreen from './screens/DetailsScreen'
 import SearchScreen from './screens/SearchScreen';
+import DescriptionScreen from './screens/DescriptionScreen.js'
 
 
 
+
+
+const DetailsStack = createStackNavigator({
+  Details : DetailsScreen,
+  Description : DescriptionScreen
+},
+{
+  mode : 'modal'
+});
 
 const AppNavigator = createStackNavigator({
   Home: HomeScreen,
-  Details : DetailsScreen,
+  Details : DetailsStack,
   Search : SearchScreen
   },
   {
