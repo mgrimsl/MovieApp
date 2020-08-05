@@ -16,11 +16,11 @@ export default class ShowMore extends React.Component {
     }
 
     render(){
-    const NUM_OF_LINES = 12;
+    const NUM_OF_LINES = 10;
     
     return (
     
-    <View style={{flexDirection : 'column', flex : 2}}>
+    <View style={styles.container}>
         <Text
         style={styles.desc}
         numberOfLines={NUM_OF_LINES}
@@ -42,9 +42,12 @@ export default class ShowMore extends React.Component {
 
 
 const styles = StyleSheet.create({
+    container : {
+        flex : 2,
+        flexDirection : 'column',
+        paddingLeft : 10
+    },
     desc :{
-        paddingLeft : 15,
-        padding : 5,
         fontSize : 16,
         color : 'white'
     },

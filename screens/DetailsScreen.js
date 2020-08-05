@@ -29,7 +29,7 @@ export default class DetailsScreen extends React.Component{
             <View style={styles.container}>
                 <View style={styles.top}>
                     <Image style={styles.poster} source={{uri : data.Poster}}/>
-                    <ShowMore plot={data.Plot} onPress={()=>this.props.navigation.navigate('Description',{'Desc' : data.Plot})}/>
+                    <ShowMore style={styles.showMore} plot={data.Plot} onPress={()=>this.props.navigation.navigate('Description',{'Desc' : data.Plot})}/>
                 </View>
                 <View style={styles.middle}>
                     {data.Ratings.map((Rating) => (
@@ -58,17 +58,18 @@ const styles = StyleSheet.create({
     },
     container : {
         flex : 1,
-        backgroundColor : 'black'
+        backgroundColor : 'black',
+        
     },
     top : {
-        flex : 1,
+        flex : .70,
         flexDirection : 'row',
-        backgroundColor : 'black'
+        backgroundColor : 'black',
+        borderWidth : 1
     },
     poster :{
         flex : 1,
-        width : 150,
-        marginBottom : 32
+        
     },
     middle: {
         flex : .5,

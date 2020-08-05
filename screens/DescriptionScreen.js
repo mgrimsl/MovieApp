@@ -16,19 +16,21 @@ export default class DescriptionScreen extends React.Component{
 
     render(){
         return( 
-        <View style={styles.constainer}>
+        <View style={styles.container}>
             <Text style={styles.text}>{this.props.navigation.getParam("Desc" , " None ")}</Text>
+            
         </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    constainer : {
+    container : {
         flex : 1,
         backgroundColor : 'black'
     },
     text :{
+        flex : 1,
         paddingTop : Constants.statusBarHeight,
         color : 'white',
         padding : 7,
